@@ -3,15 +3,8 @@ pipeline {
     tools {
         maven 'mvn'   // Name you configured in Tools
     }
-
-
-
     stages {
-        stage('git clone') {
-            steps {
-                git 'https://github.com/burla2528/pro.git'
-            }
-        }
+       
         stage('validate') {
             steps {
                 sh 'mvn validate'
