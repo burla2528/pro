@@ -1,7 +1,7 @@
 pipeline {
-    agent { label 'jenkins-node' }
+    agent { label 'node1' }
     tools {
-        maven 'mvn'   // Name you configured in Tools
+        maven 'maven'   // Name you configured in Tools
     }
     stages {
        
